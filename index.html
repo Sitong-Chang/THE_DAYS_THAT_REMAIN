@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#171914">
+  <meta name="description" content="THE DAYS THAT REMAIN — an interactive archival exhibit based on Zhu Runcang's diary, 1937–1945.">
+  <title>THE DAYS THAT REMAIN — 留下来的日子</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#top">TDR<span> / </span>ARCHIVE</a>
+    <nav><a href="#calendar" data-i18n="nav_calendar">THE CALENDAR</a><a href="#about" data-i18n="nav_about">ABOUT THE ARCHIVE</a></nav>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">中文 / EN</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-kicker"><span class="dot"></span><span data-i18n="kicker">A DIGITAL EXHIBITION · 1937—1945</span></div>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow" data-i18n="eyebrow">AN ARCHIVE OF RECORDED DAYS</p>
+          <h1>THE DAYS<br><em>THAT</em> REMAIN<span class="period">.</span></h1>
+          <h2>留下来的日子</h2>
+          <p class="hero-copy" data-i18n="hero_copy">Eight years appear here not as a continuous story, but as the dates that remain in one person's record.</p>
+          <a class="scroll-cue" href="#calendar"><span>↓</span><span data-i18n="explore">EXPLORE THE RECORD</span></a>
+        </div>
+        <div class="hero-art" aria-label="Abstract archival calendar illustration">
+          <div class="paper paper-back"></div><div class="paper paper-front">
+            <div class="paper-top">PRIVATE RECORD / 1937—1945</div>
+            <div class="paper-rule"></div>
+            <div class="paper-date">七月<br><strong>初八</strong></div>
+            <div class="paper-mark">朱润苍</div>
+            <div class="paper-bottom">近代史资料 · 第54号</div>
+          </div>
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <span class="art-index">01 — 09</span>
+        </div>
+      </div>
+      <div class="hero-footer"><span data-i18n="source_short">BASED ON 朱润苍《贞丰八年血泪录》</span><span>1937 — 1945</span></div>
+    </section>
+
+    <section class="intro-strip">
+      <div class="intro-number">01 /</div>
+      <p data-i18n="intro">A date appears when the diary leaves a trace. A blank space does not tell us that nothing happened. It tells us only that this surviving text does not record that day.</p>
+      <span class="intro-vertical" data-i18n="reading_note">HOW TO READ THIS EXHIBIT</span>
+    </section>
+
+    <section class="calendar-section" id="calendar">
+      <div class="section-head">
+        <div><p class="eyebrow">01 — THE REGISTER</p><h2 data-i18n="calendar_title">A calendar of traces</h2></div>
+        <p class="section-note" data-i18n="calendar_note">Select a marked date to unfold its record. Dates follow the lunar calendar in the original diary.</p>
+      </div>
+      <div class="legend">
+        <span><i class="legend-mark"></i><span data-i18n="legend_recorded">A date represented in this exhibit</span></span>
+        <span><i class="legend-empty"></i><span data-i18n="legend_gap">No selected entry shown</span></span>
+      </div>
+      <div id="yearRail" class="year-rail" aria-label="Select a year"></div>
+      <div class="year-display">
+        <div class="year-title"><span id="activeEra">民国二十六年</span><strong id="activeYear">1937</strong></div>
+        <div id="recordList" class="record-list"></div>
+        <div class="year-foot"><span id="yearCount">03 SELECTED RECORDS</span><span data-i18n="year_note">This is a curated selection, not a complete transcription.</span></div>
+      </div>
+      <div class="reader" id="reader" aria-live="polite">
+        <div class="reader-empty" id="readerEmpty">
+          <span class="reader-symbol">✳</span>
+          <p data-i18n="reader_prompt">Choose a marked date above.<br>The page will unfold here.</p>
+        </div>
+        <article class="reader-page hidden" id="readerPage">
+          <div class="reader-meta"><span id="readerDate"></span><span id="readerSource"></span></div>
+          <div class="reader-rule"></div>
+          <div class="reader-content">
+            <div class="reader-cn">
+              <p class="eyebrow" data-i18n="diary_fragment">DIARY FRAGMENT</p>
+              <h3 id="readerTitleCn"></h3>
+              <blockquote id="readerExcerpt"></blockquote>
+              <p id="readerSummaryCn"></p>
+            </div>
+            <div class="reader-en">
+              <p class="eyebrow" data-i18n="curatorial_note">CURATORIAL NOTE</p>
+              <h3 id="readerTitleEn"></h3>
+              <p id="readerSummaryEn"></p>
+              <p class="context" id="readerContext"></p>
+            </div>
+          </div>
+          <div class="reader-bottom"><span id="readerPageNo"></span><button id="closeReader" data-i18n="close">CLOSE ×</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">02 — THE END OF THIS RECORD</p>
+      <div class="closing-line"></div>
+      <h2 data-i18n="closing_title">“八年血泪<br><em>至此了结。</em>”</h2>
+      <p data-i18n="closing_copy">The diary closes in 1945. Its ending belongs to the author's account; it does not mean that history, memory, or its consequences ended there.</p>
+      <div class="closing-credit"><span>朱润苍《贞丰八年血泪录》</span><span>第263页</span></div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-head"><div><p class="eyebrow">03 — NOTES ON THE ARCHIVE</p><h2 data-i18n="about_title">What this calendar can—and cannot—say</h2></div></div>
+      <div class="about-grid">
+        <article><span class="about-no">01</span><h3 data-i18n="about_1_title">One source, one perspective</h3><p data-i18n="about_1">This exhibit is based on the diary attributed to Zhu Runcang and printed in <em>Modern Historical Materials</em>, issue 54. It presents the source as a situated historical record, not as a neutral or exhaustive account of every event.</p></article>
+        <article><span class="about-no">02</span><h3 data-i18n="about_2_title">Lunar dates</h3><p data-i18n="about_2">The author explicitly states that the dates in the compilation follow the lunar calendar. Gregorian years are supplied only to orient the timeline; individual lunar dates have not been converted into Gregorian dates.</p></article>
+        <article><span class="about-no">03</span><h3 data-i18n="about_3_title">Silence is not evidence of absence</h3><p data-i18n="about_3">The author also acknowledges that the account is selective and may omit details. Blank dates therefore mean “not represented in this selection / surviving text,” not that nothing happened.</p></article>
+        <article><span class="about-no">04</span><h3 data-i18n="about_4_title">Selection and transcription</h3><p data-i18n="about_4">The dates shown here are a curated sample selected to make the span of the diary explorable. Summaries are paraphrases. Short Chinese fragments are retained as quotations; OCR errors in the digitized PDF mean the scan should be checked before quoting at length.</p></article>
+      </div>
+      <div class="citation">
+        <p class="eyebrow" data-i18n="primary_source">PRIMARY SOURCE</p>
+        <p>朱润苍：《贞丰八年血泪录》，《近代史资料》第54号，中国社会科学院近代史研究所编，1984年，第234–263页。</p>
+        <a href="https://www.krzzjn.com/uploadfile/2020/0918/20200918011535847.pdf" target="_blank" rel="noopener">OPEN THE DIGITIZED VOLUME ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>THE DAYS THAT REMAIN / 留下来的日子</span><span>AN ARCHIVAL EXHIBITION · ARHU 101</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

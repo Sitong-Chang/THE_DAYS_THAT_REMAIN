@@ -1,0 +1,11 @@
+CURATORIAL DATA NOTES
+=====================
+
+The site intentionally uses a selected set of records rather than claiming to reproduce the full diary. The lunar dates are kept in the form given by the source. Gregorian years are shown only as orientation based on the Republic-year headings in the text.
+
+Before public submission, visually compare the short quotations in data/records.json against the scanned PDF pages cited in each record. The OCR text layer contains errors. Paraphrased summaries should remain distinguishable from quotations.
+
+Primary source:
+朱润苍：《贞丰八年血泪录》，《近代史资料》第54号，1984年，第234–263页。
+Digitized copy:
+https://www.krzzjn.com/uploadfile/2020/0918/20200918011535847.pdf

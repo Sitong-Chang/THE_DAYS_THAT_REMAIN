@@ -1,0 +1,250 @@
+{
+  "title": "THE DAYS THAT REMAIN",
+  "subtitle": "留下来的日子",
+  "description": "A calendar of recorded days from Zhu Runcang's diary, 1937–1945.",
+  "calendar_note": "Dates in the diary follow the lunar calendar. Gregorian years are shown only as year-level orientation.",
+  "records": [
+    {
+      "id": "1937-01",
+      "year": 1937,
+      "era": "民国二十六年",
+      "date": "七月初八日",
+      "label": "1937 · 07 / 08",
+      "page": "235–236",
+      "title": "The first entry",
+      "title_zh": "记述的起点",
+      "summary_zh": "作者将日记的开端放在日军进犯、炮声传来的时刻。地方组织成立抗敌后援会，日常生活开始被战争消息打断。",
+      "summary_en": "The diary begins with the invasion and the sound of artillery. A local anti-enemy support organization is formed; ordinary life is interrupted by news of war.",
+      "excerpt_zh": "“炮声隆隆可闻。”",
+      "context": "The source dates this entry by the lunar calendar. The year 1937 is identified in the text as the twenty-sixth year of the Republic.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第235–236页。"
+    },
+    {
+      "id": "1937-02",
+      "year": 1937,
+      "era": "民国二十六年",
+      "date": "九月十九日",
+      "label": "1937 · 09 / 19",
+      "page": "236",
+      "title": "Aircraft over the town",
+      "title_zh": "敌机飞临",
+      "summary_zh": "日记记载敌机飞临镇上并投弹、扫射，过境运输船遭到攻击，船上人员伤亡。",
+      "summary_en": "The diary records aircraft over the town, bombs and machine-gun fire, and an attack on passing transport vessels that caused casualties.",
+      "excerpt_zh": "敌机二架飞镇",
+      "context": "This is a dated entry in the first year covered by the diary. The brief description here is a paraphrase, not a complete transcription.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第236页。"
+    },
+    {
+      "id": "1937-03",
+      "year": 1937,
+      "era": "民国二十六年",
+      "date": "十月初八日",
+      "label": "1937 · 10 / 08",
+      "page": "236–237",
+      "title": "Rumours and retreat",
+      "title_zh": "战事消息与迁避",
+      "summary_zh": "作者记录战事失利的消息传来，溃军过境，居民开始私下商议迁避。",
+      "summary_en": "After news of a military setback arrives, retreating troops pass through. Residents begin discussing whether and how to leave.",
+      "excerpt_zh": "“居民皆相率私议迁避方针。”",
+      "context": "The entry shows how distant military developments entered local life through radio reports, troop movements, and uncertainty.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第236–237页。"
+    },
+    {
+      "id": "1938-01",
+      "year": 1938,
+      "era": "民国二十七年",
+      "date": "正月十二日",
+      "label": "1938 · 01 / 12",
+      "page": "238–239",
+      "title": "A house is hit",
+      "title_zh": "房屋被炸",
+      "summary_zh": "日记记载敌机投弹，其中一枚击中杨家潭徐宅，房屋被毁，并有一名妇人死亡。",
+      "summary_en": "The diary records an air raid in which one bomb struck a residence at Yangjiatan, destroying rooms and killing a woman.",
+      "excerpt_zh": "敌机一架飞镇盘旋",
+      "context": "The source gives a specific location and loss. This exhibit does not add details beyond what the entry records.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第238–239页。"
+    },
+    {
+      "id": "1939-01",
+      "year": 1939,
+      "era": "民国二十八年",
+      "date": "二月初七日",
+      "label": "1939 · 02 / 07",
+      "page": "245–246",
+      "title": "Fighting nearby",
+      "title_zh": "附近交火",
+      "summary_zh": "陈部与敌伪军在莘塔附近相遇并发生交火，日记记录枪炮声持续约一小时。",
+      "summary_en": "Forces identified in the diary as Chen's unit and enemy puppet troops encounter one another near Xinta. Gunfire is heard for about an hour.",
+      "excerpt_zh": "“小钢炮、机枪声激烈可闻。”",
+      "context": "The entry is one of many that describe local experience through sounds, movement, and reports rather than a broad military overview.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第245–246页。"
+    },
+    {
+      "id": "1940-01",
+      "year": 1940,
+      "era": "民国二十九年",
+      "date": "正月十二日",
+      "label": "1940 · 01 / 12",
+      "page": "247",
+      "title": "A brief arrival",
+      "title_zh": "敌军到镇",
+      "summary_zh": "日记记载敌军乘船到镇，停留不久后离开。相邻条目继续记录当地武装活动与居民处境。",
+      "summary_en": "The diary notes that troops arrived by boat and left after a short stay. Nearby entries continue to describe armed activity and local conditions.",
+      "excerpt_zh": "敌军三十余名乘轮二艘到镇",
+      "context": "The record is concise. Its brevity is preserved here rather than expanded into an imagined scene.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第247页。"
+    },
+    {
+      "id": "1941-01",
+      "year": 1941,
+      "era": "民国三十年",
+      "date": "正月初九日",
+      "label": "1941 · 01 / 09",
+      "page": "250",
+      "title": "Repeated disruption",
+      "title_zh": "反复的骚扰",
+      "summary_zh": "日记记载敌伪军到镇勒款、骚扰，商店和居民住处遭到劫掠，翌晨离去。",
+      "summary_en": "The diary records troops demanding money and causing disruption; shops and homes were looted before they departed the following morning.",
+      "excerpt_zh": "商店，居户被劫甚多",
+      "context": "This is a summary of the source's account, not an independent verification of every allegation in it.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第250页。"
+    },
+    {
+      "id": "1942-01",
+      "year": 1942,
+      "era": "民国三十一年",
+      "date": "正月初七日",
+      "label": "1942 · 01 / 07",
+      "page": "251–252",
+      "title": "A town under pressure",
+      "title_zh": "封锁与搜查",
+      "summary_zh": "日记记载敌军到镇，封锁交通线并在多处驻扎；地方人士组织临时招待所，应对物资与经济事务。",
+      "summary_en": "The diary describes troops entering the town, restricting transport routes, and occupying several sites. Local representatives organize a temporary reception office to manage supplies and related matters.",
+      "excerpt_zh": "“封锁交通线。”",
+      "context": "The account moves between military presence, local administration, and the burdens placed on residents.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第251–252页。"
+    },
+    {
+      "id": "1943-01",
+      "year": 1943,
+      "era": "民国三十二年",
+      "date": "正月十五日",
+      "label": "1943 · 01 / 15",
+      "page": "255",
+      "title": "Another change of command",
+      "title_zh": "驻镇人员更替",
+      "summary_zh": "日记记载驻镇敌队长调动，并继续描述伪机关以经费不足为由，向乡镇摊派柴米。",
+      "summary_en": "The diary notes a change in the local enemy command and describes local offices imposing firewood and rice levies, citing insufficient funds.",
+      "excerpt_zh": "“强迫每保按月摊派柴米。”",
+      "context": "The diary's entries often register changes in local power through seemingly administrative details such as levies and appointments.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第255页。"
+    },
+    {
+      "id": "1944-01",
+      "year": 1944,
+      "era": "民国三十三年",
+      "date": "七月初四日",
+      "label": "1944 · 07 / 04",
+      "page": "256–257",
+      "title": "A new appointment",
+      "title_zh": "地方职务更替",
+      "summary_zh": "日记记录伪区长调任、继任者到任，以及随后又被撤职的情况。",
+      "summary_en": "The diary records the removal and replacement of a local district head, followed by another change in the position.",
+      "excerpt_zh": "伪区长刘华云调往湘域",
+      "context": "This entry is presented as a record of administrative change; the exhibit does not infer motives not stated in the source.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第256–257页。"
+    },
+    {
+      "id": "1945-01",
+      "year": 1945,
+      "era": "民国三十四年",
+      "date": "正月二十六日",
+      "label": "1945 · 01 / 26",
+      "page": "259–260",
+      "title": "An encounter at Nanding",
+      "title_zh": "南汀村交火",
+      "summary_zh": "日记记载驻芦墟敌军与“忠救军”在南汀村发生交火，持续约两小时，并记有人员伤亡。",
+      "summary_en": "The diary records an encounter between troops based at Luxu and the Zhongjiu Army at Nanding village, lasting about two hours, with a reported death.",
+      "excerpt_zh": "枪声激烈，约二小时始止",
+      "context": "The description follows the source's own terminology. The historical labels are retained rather than silently modernized.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第259–260页。"
+    },
+    {
+      "id": "1945-02",
+      "year": 1945,
+      "era": "民国三十四年",
+      "date": "五月二十三日",
+      "label": "1945 · 05 / 23",
+      "page": "262",
+      "title": "A changing situation",
+      "title_zh": "局势仍未平静",
+      "summary_zh": "日记记载一支自称“特别警卫队”的队伍来到镇上，并描述其驻扎、活动及对地方居民造成的不安。",
+      "summary_en": "The diary describes a unit calling itself the “Special Guard” arriving in town, its presence and activities, and the unease it caused among residents.",
+      "excerpt_zh": "“有识之人，默察其情，咸多忧虑。”",
+      "context": "The exhibit keeps the source's label in quotation marks to distinguish the diary's wording from the curator's voice.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第262页。"
+    },
+    {
+      "id": "1945-03",
+      "year": 1945,
+      "era": "民国三十四年",
+      "date": "七月初五日—初十日",
+      "label": "1945 · 07 / 05—10",
+      "page": "263",
+      "title": "The final entry",
+      "title_zh": "最后的日记记录",
+      "summary_zh": "作者记载受降消息传来，随后“黑衣队”撤离，镇上开始公开庆祝，并以“八年血泪至此了结”收束记述。",
+      "summary_en": "The author records news of surrender, the subsequent withdrawal of the “Black-clothed unit,” and public celebration in town. The account closes by saying that the eight years of blood and tears had come to an end.",
+      "excerpt_zh": "“八年血泪至此了结。”",
+      "context": "The diary's closing passage is the endpoint of this exhibit. It is not presented as the end of all historical suffering or as a complete account of the postwar period.",
+      "source": "《近代史资料》第54号，朱润苍《贞丰八年血泪录》，第263页。"
+    }
+  ],
+  "years": [
+    {
+      "year": 1937,
+      "era": "民国二十六年",
+      "note": "The diary begins in July."
+    },
+    {
+      "year": 1938,
+      "era": "民国二十七年",
+      "note": "Entries continue through the second year."
+    },
+    {
+      "year": 1939,
+      "era": "民国二十八年",
+      "note": "The account continues."
+    },
+    {
+      "year": 1940,
+      "era": "民国二十九年",
+      "note": "The account continues."
+    },
+    {
+      "year": 1941,
+      "era": "民国三十年",
+      "note": "The account continues."
+    },
+    {
+      "year": 1942,
+      "era": "民国三十一年",
+      "note": "The account continues."
+    },
+    {
+      "year": 1943,
+      "era": "民国三十二年",
+      "note": "The account continues."
+    },
+    {
+      "year": 1944,
+      "era": "民国三十三年",
+      "note": "The account continues."
+    },
+    {
+      "year": 1945,
+      "era": "民国三十四年",
+      "note": "The surviving account closes in the summer."
+    }
+  ]
+}
