@@ -1,23 +1,11 @@
-# THE DAYS THAT REMAIN — V2
+# THE DAYS THAT REMAIN V3
+Static site: upload all files to repository root, Vercel framework Other, no build. Local preview: python -m http.server 8000.
 
-A more experimental, text-led archival exhibition built from the existing curated record set.
+## Source status
+The complete publication is linked and remotely embedded, not bundled or transcribed. The container could not download the PDF. Printed page range 234–263 and PDF offset +1 are provisional; check against scans. Local PDF upload expects the entire original 267-page issue. If embed fails use the external link. No invented diary quotes. The cover is a designed title card, not a scan. Source cards are curator summaries, not full archival texts. The catalog includes seven entries, including collection-level discovery leads. All URLs are in data.js; relations are source-level, not event-level verification.
 
-## Design changes
-- Removes the long explanatory panels from the exhibition surface.
-- Makes short source fragments the main visual material.
-- Uses oversized editorial typography, a dark archive field, a red interlude, and a contrasting paper-colored final-record section.
-- Year tabs filter fragments; selecting a fragment unfolds a reading sheet with date, source page, original Chinese fragment, and a secondary paraphrase.
-- Adds an all-record index and scroll progress indicator.
-- Keeps the source citation compact at the end.
+## Interaction reference
+INFOSCI301 Advanced Visualization Atlas https://github.com/sunshineluyao/infosci301-advanced-visualization-atlas README and effects.js consulted. Compare and Layered Depth patterns independently implemented; no code copied (repository has no declared license). Archive constellation is a manually positioned, draggable, zoomable source-level network. No simulated data about suffering.
 
-## Run locally
-```bash
-python -m http.server 8000
-```
-Open http://localhost:8000. Do not open `index.html` as a `file://` URL because the archive data is loaded with `fetch`.
-
-## Deploy
-Upload the contents of this folder to the GitHub repository root and redeploy on Vercel. No build command is required.
-
-## Important source note
-The record dataset is reused from the current V1 project. It is a curated sample, not a full transcription. The short Chinese fragments are carried over from V1 and should be checked against the original scan before final submission. Curatorial explanation and methodology have intentionally been moved out of the main exhibit; include them in the separate worksheet / written interpretation.
+## Remaining work
+Acquire the full PDF locally, verify page mapping, add page-level transcriptions and event-level source links after checking the source. Verify publication year from colophon (previous version year not reliable). Browser rendering and cross-origin PDF embedding not tested here; JavaScript syntax checked. 

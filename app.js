@@ -1,61 +1,6 @@
-const DATA="data/records.json";let db=null,currentYear=1937,currentRecord=null;
-const $=s=>document.querySelector(s);
-function clean(s){return String(s??"").replace(/[<>]/g,"")}
-function yearRecords(y){return db.records.filter(r=>r.year===y)}
-function buildTabs(){
- const host=$("#yearTabs");host.innerHTML="";
- db.years.forEach(y=>{const b=document.createElement("button");b.className="year-tab"+(y.year===currentYear?" active":"");b.textContent=String(y.year).slice(2);b.title=String(y.year);b.onclick=()=>{currentYear=y.year;currentRecord=null;renderYear();closeReader();};host.appendChild(b);});
-}
-function chooseDisplay(r){
- // Keep the archival wording prominent. The quote is the primary visual; summary is explicitly secondary.
- return r.excerpt_zh || r.summary_zh;
-}
-function renderYear(){
- buildTabs();const meta=db.years.find(y=>y.year===currentYear);const list=yearRecords(currentYear);
- $("#eraLabel").textContent=meta.era;$("#yearLabel").textContent=currentYear;
- $("#yearTally").textContent=String(list.length).padStart(2,"0")+" FRAGMENTS";
- const host=$("#fragments");host.innerHTML="";
- list.forEach((r,i)=>{
-  const el=document.createElement("article");el.className="fragment";el.tabIndex=0;
-  const date=document.createElement("div");date.className="frag-date";date.textContent=`${r.date} / ${r.page}`;
-  const words=document.createElement("div");words.className="frag-words";words.textContent=chooseDisplay(r);
-  const metaLine=document.createElement("div");metaLine.className="frag-meta";metaLine.textContent=`${r.title_zh}  ·  OPEN RECORD ↗`;
-  const arrow=document.createElement("span");arrow.className="frag-arrow";arrow.textContent="↗";
-  el.append(date,words,metaLine,arrow);el.onclick=()=>openRecord(r.id);el.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openRecord(r.id);}};
-  host.appendChild(el);
- });
- $("#stageCounter").textContent=`${String(1).padStart(2,"0")} / ${String(list.length).padStart(2,"0")}`;
-}
-function openRecord(id){
- const r=db.records.find(x=>x.id===id);if(!r)return;currentRecord=r;
- $("#readerIndex").textContent=`DOCUMENT / ${String(db.records.indexOf(r)+1).padStart(3,"0")}`;
- $("#readerEra").textContent=r.era;$("#readerLunar").textContent=r.date;$("#readerGregorian").textContent=r.year;
- $("#readerQuote").textContent=r.excerpt_zh||r.title_zh;
- $("#readerSummary").textContent=r.summary_zh;
- $("#readerPage").textContent=`SOURCE PAGE ${r.page}`;
- $("#readerSource").textContent=r.source;
- $("#reader").classList.add("open");
- $("#reader").scrollIntoView({behavior:"smooth",block:"start"});
-}
-function closeReader(){$("#reader").classList.remove("open");}
-function renderIndex(){
- const host=$("#allRecords");host.innerHTML="";
- db.records.forEach(r=>{
-  const el=document.createElement("div");el.className="index-record";el.innerHTML=`<span class="index-year">${r.year}</span><div><div class="index-title">${clean(r.title_zh)}</div><div class="index-date">${clean(r.date)} · P.${clean(r.page)}</div></div>`;
-  el.onclick=()=>{currentYear=r.year;renderYear();openRecord(r.id);$("#archive").scrollIntoView({behavior:"smooth"});};host.appendChild(el);
- });
-}
-function setupScroll(){
- const label=$("#progressLabel");
- const update=()=>{const max=document.documentElement.scrollHeight-innerHeight;const p=max>0?Math.round(scrollY/max*100):0;label.textContent=`${p}% / IN THE RECORD`;};
- addEventListener("scroll",update,{passive:true});update();
- const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("seen");}),{threshold:.15});
- document.querySelectorAll(".threshold,.archive,.interlude,.final-record").forEach(el=>observer.observe(el));
-}
-async function init(){
- const res=await fetch(DATA);db=await res.json();renderYear();renderIndex();
- $("#readerClose").onclick=closeReader;
-
- setupScroll();
-}
-init().catch(e=>{console.error(e);$("#fragments").textContent="Archive data unavailable. Run this site through a local server.";});
+const $=id=>document.getElementById(id), clamp=(n,a,b)=>Math.max(a,Math.min(b,n));let page=234, pdf=PDF, localURL='';function showPage(n){page=clamp(Number(n)||234,234,263);$('jump').value=page;$('pageTitle').textContent='原刊 p. '+page;$('pdf').src=pdf+'#page='+(page+1);$('external').href=pdf+'#page='+(page+1);document.querySelectorAll('#pages button').forEach(b=>b.classList.toggle('active',+b.textContent===page));$('prev').disabled=page===234;$('next').disabled=page===263}for(let n=234;n<=263;n++){let b=document.createElement('button');b.textContent=n;b.onclick=()=>showPage(n);$('pages').append(b)}$('prev').onclick=()=>showPage(page-1);$('next').onclick=()=>showPage(page+1);$('go').onclick=()=>showPage($('jump').value);$('local').onchange=e=>{if(e.target.files[0]){if(localURL)URL.revokeObjectURL(localURL);pdf=localURL=URL.createObjectURL(e.target.files[0]);showPage(page)}};showPage(page);
+const card=s=>`<small>${s.en} / ${s.date}</small><h3>${s.title}</h3><p>${s.description}</p><small>${s.origin}</small>`;let selected='diary', filter='全部', pos=sources.map((s,i)=>i===0?[400,260]:[400+270*Math.cos((i-1)*Math.PI/3-Math.PI/2),260+185*Math.sin((i-1)*Math.PI/3-Math.PI/2)]);let zoom=1,pan=[0,0],drag=null;const svg=$('graph');function pick(id){selected=id;let s=sources.find(x=>x.id===id);$('detail').innerHTML=`<span class="tag">${s.relation} / ${s.type}</span>${card(s)}<p><a href="${s.url}" target="_blank" rel="noopener">打开原始来源 ↗</a></p><button id="compareThis">加入右侧对照</button>`;$('compareThis').onclick=()=>{$('right').value=id;compare();$('compare').scrollIntoView()};draw()}
+function draw(){svg.innerHTML=`<g transform="translate(${pan.join(' ')}) scale(${zoom})">${sources.slice(1).map((s,i)=>filter==='全部'||s.relation===filter?`<line x1="${pos[0][0]}" y1="${pos[0][1]}" x2="${pos[i+1][0]}" y2="${pos[i+1][1]}" stroke="${s.relation==='直接关联'?'#cb5842':'#797366'}" stroke-dasharray="${s.relation==='直接关联'?'0':'5 6'}"/>`:'').join('')}${sources.map((s,i)=>i===0||filter==='全部'||s.relation===filter?`<g data-id="${s.id}" tabindex="0" role="button" aria-label="${s.title}" transform="translate(${pos[i].join(' ')})"><circle r="${i===0?43:24}" fill="${s.id===selected?'#cb5842':'#d8cbb0'}" stroke="#171a18" stroke-width="3"/><text text-anchor="middle" y="${i===0?64:43}" fill="#e9dfce" font-size="14">${i===0?'贞丰八年血泪录':s.title.length>12?s.title.slice(0,11)+'…':s.title}</text><text text-anchor="middle" y="5" fill="#26231c" font-size="12">${s.type.slice(0,2)}</text></g>`:'').join('')}</g>`;svg.querySelectorAll('[data-id]').forEach(g=>g.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(g.dataset.id)}})}
+for(let f of ['全部','直接关联','区域背景','调查入口']){let b=document.createElement('button');b.textContent=f;b.onclick=()=>{filter=f;[...$('filters').children].forEach(x=>x.classList.toggle('active',x===b));draw()};$('filters').append(b)}$('filters').firstChild.classList.add('active');svg.onpointerdown=e=>{let node=e.target.closest('[data-id]');drag={id:node?.dataset.id,x:e.clientX,y:e.clientY,moved:false};svg.setPointerCapture(e.pointerId)};svg.onpointermove=e=>{if(!drag)return;let dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)<2&&!drag.moved)return;drag.moved=true;let scale=800/svg.getBoundingClientRect().width;if(drag.id){let i=sources.findIndex(s=>s.id===drag.id);pos[i][0]+=dx*scale/zoom;pos[i][1]+=dy*scale/zoom}else{pan[0]+=dx*scale;pan[1]+=dy*scale}drag.x=e.clientX;drag.y=e.clientY;draw()};svg.onpointerup=()=>{if(drag&&!drag.moved&&drag.id)pick(drag.id);drag=null};svg.onpointercancel=()=>drag=null;svg.addEventListener('wheel',e=>{e.preventDefault();zoom=clamp(zoom*(e.deltaY>0?.9:1.1),.6,2.5);draw()},{passive:false});$('reset').onclick=()=>{zoom=1;pan=[0,0];pos=sources.map((s,i)=>i===0?[400,260]:[400+270*Math.cos((i-1)*Math.PI/3-Math.PI/2),260+185*Math.sin((i-1)*Math.PI/3-Math.PI/2)]);draw()};pick('diary');
+for(let id of ['left','right']){$(id).innerHTML=sources.map(s=>`<option value="${s.id}">${s.title}</option>`).join('');$(id).onchange=compare}$('right').value='family';function compare(){let a=sources.find(s=>s.id===$('left').value),b=sources.find(s=>s.id===$('right').value);$('leftcard').innerHTML=card(a);$('rightcard').innerHTML=card(b);$('comparelinks').innerHTML=[a,b].map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.title} ↗</a>`).join(' · ')}compare();function split(v){v=clamp(v,0,100);$('split').value=v;$('wipe').style.setProperty('--split',v+'%')}$('split').oninput=e=>split(e.target.value);$('wipe').onpointerdown=e=>{$('wipe').setPointerCapture(e.pointerId);moveSplit(e)};$('wipe').onpointermove=e=>{if($('wipe').hasPointerCapture(e.pointerId))moveSplit(e)};function moveSplit(e){let r=$('wipe').getBoundingClientRect();split((e.clientX-r.left)/r.width*100)}
+let layers=[sources[4],sources[2],sources[1],sources[0]];$('stack').innerHTML=layers.map((s,i)=>`<div class="sheet" style="--n:${i-1.5}"><small>${s.en} / ${s.relation}</small><h3>${s.title}</h3><p>${s.date}</p></div>`).join('');$('layerkeys').innerHTML=layers.map(s=>`<button data-layer="${s.id}">${s.type} · ${s.title} ↗</button>`).join('');$('layerkeys').onclick=e=>{if(e.target.dataset.layer){pick(e.target.dataset.layer);$('network').scrollIntoView()}};let rx=34,ry=-20;function rotate(){ $('stack').style.transform=`rotateX(${rx}deg) rotateY(${ry}deg)`;}$('depth').onpointermove=e=>{if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;let r=$('depth').getBoundingClientRect();rx=clamp(34-(e.clientY-r.top-r.height/2)/r.height*60,-20,65);ry=clamp((e.clientX-r.left-r.width/2)/r.width*95,-45,45);rotate()};$('rotateL').onclick=()=>{ry-=15;rotate()};$('rotateR').onclick=()=>{ry+=15;rotate()};$('spacing').oninput=e=>$('stack').style.setProperty('--spacing',e.target.value+'px');function catalog(){let q=$('search').value.toLowerCase();$('catalog').innerHTML=sources.filter(s=>Object.values(s).join(' ').toLowerCase().includes(q)).map(s=>`<article><small>${s.relation} · ${s.type}</small>${card(s)}<p><a href="${s.url}" target="_blank" rel="noopener">来源 ↗</a></p></article>`).join('')||'没有匹配材料。'}$('search').oninput=catalog;catalog();
