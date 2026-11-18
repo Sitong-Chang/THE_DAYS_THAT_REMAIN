@@ -1,11 +1,6 @@
-# THE DAYS THAT REMAIN V3
-Static site: upload all files to repository root, Vercel framework Other, no build. Local preview: python -m http.server 8000.
+# THE DAYS THAT REMAIN — V4
+Static multi-page exhibition. Upload the contents of this folder to the existing GitHub repository root (including assets). Vercel preset: Other; no build command; output root. Preview with `python -m http.server 8000` in this directory.
 
-## Source status
-The complete publication is linked and remotely embedded, not bundled or transcribed. The container could not download the PDF. Printed page range 234–263 and PDF offset +1 are provisional; check against scans. Local PDF upload expects the entire original 267-page issue. If embed fails use the external link. No invented diary quotes. The cover is a designed title card, not a scan. Source cards are curator summaries, not full archival texts. The catalog includes seven entries, including collection-level discovery leads. All URLs are in data.js; relations are source-level, not event-level verification.
+13 HTML entry points, shared CSS/JS, bilingual interface persisted in localStorage. The diary reader includes 30 printed pages (234–263, source PDF pages 235–264), machine-extracted Chinese text, page navigation and thematic margins. English summaries are curatorial descriptions, not full translations. Public catalogue records without confirmed originals or rights are explicitly link-only; DKU records pending. The Japanese deployment map scan is unreadable beyond the cover. The newspaper files are supplied full-page transcriptions; OCR and unrelated material may remain. Wujiang article page numbers are printed catalogue references, not verified PDF offsets. No claim of a direct same-event match is made. The two town maps are later spatial references.
 
-## Interaction reference
-INFOSCI301 Advanced Visualization Atlas https://github.com/sunshineluyao/infosci301-advanced-visualization-atlas README and effects.js consulted. Compare and Layered Depth patterns independently implemented; no code copied (repository has no declared license). Archive constellation is a manually positioned, draggable, zoomable source-level network. No simulated data about suffering.
-
-## Remaining work
-Acquire the full PDF locally, verify page mapping, add page-level transcriptions and event-level source links after checking the source. Verify publication year from colophon (previous version year not reliable). Browser rendering and cross-origin PDF embedding not tested here; JavaScript syntax checked. 
+Before public deployment confirm reproduction permission for all local scans, supplied transcriptions and maps; remove assets lacking permission. External video embeds depend on provider availability. Edit records and pages in data.js, design in style.css, and shared rendering in app.js. No dependencies or API keys.
