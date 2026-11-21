@@ -1,0 +1,112 @@
+[
+  {
+    "year": "1937",
+    "value": 4.65,
+    "id": "p72",
+    "page": 238,
+    "display": "4.6–4.7",
+    "quote": "是岁冬，各物价甚贱，尤以米为最下乘，每石不过四元六七角左右。",
+    "en": "Winter; approximately 4.6–4.7 yuan per shi.",
+    "zh": "冬季，每石约4.6—4.7元。"
+  },
+  {
+    "year": "1938",
+    "value": 10,
+    "id": "p106",
+    "page": 242,
+    "display": "~10",
+    "quote": "其时米价：糙粳十元左右。",
+    "en": "Brown japonica rice; around 10 yuan.",
+    "zh": "糙粳米，约10元。"
+  },
+  {
+    "year": "1939",
+    "value": 23,
+    "id": "p194",
+    "page": 247,
+    "display": "23",
+    "quote": "白米一石已达二十三元。",
+    "en": "White rice; 23 yuan.",
+    "zh": "白米，每石23元。"
+  },
+  {
+    "year": "1940",
+    "value": 35,
+    "id": "p204",
+    "page": 248,
+    "display": "35",
+    "quote": "时米价已高涨至三十五元一石。",
+    "en": "35 yuan per shi.",
+    "zh": "每石35元。"
+  },
+  {
+    "year": "1941",
+    "value": 100,
+    "id": "p235",
+    "page": 250,
+    "display": ">100",
+    "quote": "生活日高，米价出百元大关。",
+    "en": "Above 100 yuan; plotted at 100 as a lower bound.",
+    "zh": "超过100元；图中以100元作为下限。"
+  },
+  {
+    "year": "1943",
+    "value": 500,
+    "id": "p303",
+    "page": 256,
+    "display": "~500",
+    "quote": "米价上涨不已，每石伪币五百元左右。",
+    "en": "Around 500 yuan in puppet currency.",
+    "zh": "伪币约500元。"
+  },
+  {
+    "year": "1944",
+    "value": 3000,
+    "id": "p310",
+    "page": 256,
+    "display": "3,000",
+    "quote": "米价一石伪储币三千元。",
+    "en": "3,000 yuan in puppet reserve currency.",
+    "zh": "伪储币3000元。"
+  },
+  {
+    "year": "1944",
+    "value": 7000,
+    "id": "p318",
+    "page": 257,
+    "display": "7,000",
+    "quote": "米价涨至伪币七千元一石。",
+    "en": "7,000 yuan in puppet currency.",
+    "zh": "伪币7000元。"
+  },
+  {
+    "year": "1945",
+    "value": 30000,
+    "id": "p347",
+    "page": 260,
+    "display": "30,000",
+    "quote": "米价时出伪币三万元一石。",
+    "en": "30,000 yuan in puppet currency.",
+    "zh": "伪币30000元。"
+  },
+  {
+    "year": "1945",
+    "value": 70000,
+    "id": "p362",
+    "page": 261,
+    "display": "70,000",
+    "quote": "米市每石伪币七万元，起〔近〕半月中，竟狂涨至七十万元，尚有价无货。",
+    "en": "70,000 yuan, followed by a rapid increase.",
+    "zh": "伪币70000元，随后迅速上涨。"
+  },
+  {
+    "year": "1945",
+    "value": 700000,
+    "id": "p362",
+    "page": 261,
+    "display": "700,000",
+    "quote": "米市每石伪币七万元，起〔近〕半月中，竟狂涨至七十万元，尚有价无货。",
+    "en": "700,000 yuan; the diary says rice was unavailable even at this price.",
+    "zh": "伪币700000元；原文称“尚有价无货”。"
+  }
+]
