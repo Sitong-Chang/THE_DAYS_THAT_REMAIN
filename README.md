@@ -1,63 +1,37 @@
-# THE DAYS THAT REMAIN · V11 / Annotated Digital Edition
+# The Days That Remain
 
-Single-page bilingual archival edition. Based on the 1984 printed publication of 朱润苍《贞丰八年血泪录》 in 《近代史资料》总第54号, pp. 234–263.
+**ARHU 101 — Archival Project Worksheet**  
+**Name:** Sitong Chang  
+**Project:** https://thedaysthatremain.vercel.app/
 
-## Local preview
+## 1. Which archive did you select, and how does it align with the definition of an archive?
 
-From this directory run `python3 -m http.server 8000`, then visit `http://localhost:8000`.
+For my project, I chose Zhu Runcang’s 贞丰八年血泪录, which describes life in Zhouzhuang from 1937 to 1945. I used the version printed in Jindaishi Ziliao, no. 54 (1984), pages 234–263. I also looked at old newspapers, local history articles, and photographs from DKU Special Collections. The DKU materials include travel guides, maps, pictures of Tinglin Hill, postcards, and Japanese wartime publications. I liked seeing how different these records were. A diary describes what people experienced, while a guidebook shows what visitors might have seen or been told about the area. Putting them together helped me get a fuller picture of the place.
 
-## V11 additions
+## 2. How did you use your archival materials in your writing?
 
-- **30 page scans** of printed pp. 234–263, generated directly from the supplied 1984 PDF. Click the small page number beside a passage to compare printed page and transcription; arrow buttons and keyboard arrows move between pages.
-- **Nine curated reading paths** to selected passages, with a full-text mode for all 328 passages.
-- **Automatically synchronized marginal notes** while reading on desktop, plus previous/next note controls and return-to-text.
-- **Source register** based on the existing note metadata. Original 23 editorial notes and 21 existing archive images preserved.
-- Original bilingual interface and bilingual note text preserved. The 328 original Chinese passages have no unverified English translation.
+I turned the materials into a bilingual website called The Days That Remain. The main part is a reader with 328 passages from Zhu’s account. I added a search function, notes, and scans of the printed pages so people can check the text for themselves. I also put newspaper reports and DKU photographs next to some of the passages. My favorite part to work on was the rice-price chart. Zhu mentions prices at different points in the account, and I wanted to see what they looked like together. You can click a point on the chart to find the passage it came from. I kept the captions fairly short because I wanted people to spend time looking at the materials.
 
-## Editorial limitations
+## 3. What was your independent research process? Please include any sources or inspirations you used.
 
-- The source register groups existing descriptions; it does not assert new collection IDs or invent citations.
-- Diary dates are lunar; newspaper dates are Gregorian.
-- The 30 facsimiles come from the 1984 *printed edition*, not an autograph manuscript.
-- Regional images should not be presented as photographs of the same event.
+I started with the diary and made notes about details that kept coming up, especially refugees, boats and waterways, rice collection, and prices. Then I looked for related material in Shen Bao, Wujiang Wenshi Ziliao (vol. 15), and the DKU collections. Some things were harder to match than I expected. A newspaper might mention the same town or subject but describe a different incident. I went back to the dates and place names quite a few times. For the website, I looked at annotated books and independent magazines. I tried several layouts before settling on something that felt more like a book people could browse at their own pace.
 
+## 4. How did you approach ethical considerations in your writing?
 
-## V11 English-led revision
-- The English view opens by default, with an English hero title and English-dominant heading hierarchy, captions, source labels, and editorial copy.
-- Switch to Chinese using the language control; the Chinese title and Chinese editorial typography return.
-- The original 1937–1945 text and 1984 facsimile are retained in Chinese in both modes; a full scholarly English translation is not included.
-- Source-language quotations and original document titles may appear in Chinese when necessary for historical fidelity.
+I paid attention to where each image and quotation came from. The text I used was published in 1984, so I list that edition and its page numbers. I also checked dates carefully because Zhu used the lunar calendar and the newspapers used the Gregorian calendar. Some of the DKU photographs show Kunshan or Suzhou more generally, so I use them to give a sense of the area. I was especially interested in the Japanese postcards and wartime publications. Their captions show how the publishers wanted these places and events to be seen, which is worth keeping in mind when reading them. I included source credits and left out dates or catalog details I couldn't confirm. The original diary passages stay in Chinese, with English explanations alongside them.
 
-## V12 English-mode audit
-- Corrected all 16 untranslated reading-note headings. All 23 note titles, bodies, source descriptions, and category labels now have English fields.
-- Seven archival quotations display English translations in English mode; original Chinese quotations remain in Chinese mode. The translations are editorial renderings, not independent historical sources.
-- Full historical transcription (328 entries) and facsimile scans remain in original Chinese.
-- Language toggle affects all 23 note titles, note text, quotations, source register, and reading paths.
+## 5. Please attach relevant images of the archives that you used.
 
-## V13 — From the Collections
-- Added a new editorial collection section with **12 additional photographs** from the DKU collection photographs supplied in this project, with a filter for printed guides, maps, waterways, publications and landscape photographs.
-- The images are incorporated as real local files (WebP), with bilingual English-first titles and captions and existing zoom-to-inspect interaction.
-- The collection distinguishes regional background images from evidence for specific events. Where item-level dates, locations and catalog identifiers have not been verified, the captions explicitly avoid claiming them.
-- Preserved the V12 reader, 328 Chinese source paragraphs, 23 bilingual notes, 30 printed facsimiles, search, reading paths and source index.
+I included four images below: a page from the 1984 edition of Zhu’s account, a historical local map, an old photograph of Tinglin Hill, and a page from a Japanese wartime illustrated publication. More photographs and scans are available on the website.
 
-## V14 — Object-based collections revision
-- Moved From the Collections to **after the full diary reading section**. Navigation follows the new order.
-- Corrected four historical landscape photographs as **Tinglin Hill** views.
-- Separated the local **travel guide** from two **Japanese-issued wartime illustrated pages**, with close readings of their English captions. The Japanese descriptions are treated as the issuing side's perspective, not independently verified military history.
-- Added two photographed **Japanese-issued picture postcards** depicting Suzhou, with transcribed visible inscriptions. The issue dates and exact issuing body have not been verified.
-- Rewrote all twelve earlier captions in bilingual English-first form and added two postcard entries.
-- Important: the object genres and provenance follow the user's collection identification; a catalog record is still needed for item-level certainty.
+![1984 printed edition](assets/facsimile-256.webp)
+*Zhu Runcang, printed edition, Jindaishi Ziliao 54 (1984), p. 256.*
 
-## V15 — A quieter collection section
-- Replaced explanatory captions with short, everyday descriptions and occasional clearly subjective observations.
-- Removed the formal object-reading essay and repeated interpretive warnings.
-- Rearranged the 14 DKU images: guide pages → map → Tinglin Hill photographs → Japanese-issued postcards → wartime printed pages.
-- Increased image size and whitespace. All 328 source passages, 23 notes, 30 facsimile pages, and bilingual switching remain.
-- Historical source identifications are preserved in concise credit and image descriptions; unverified dates and catalog numbers remain unspecified.
+![Local guide/map](assets/kunshan-map.webp)
+*Historical local map from the project’s archival collection materials.*
 
+![Tinglin Hill](assets/dku-landscape4.webp)
+*Historical view of Tinglin Hill, DKU collection photograph.*
 
-## V16 — The price of rice / 米价变化
-
-An interactive rice-price chart appears after the 1943 grain-collection comparison. It uses **11 quotations** from Zhu Runcang's text, across 1937–1945, with the original passage and printed page reference for each. The chart has logarithmic and linear scales, clickable/keyboard-selectable points, and a link back to the full transcription. 1942 has no numeric price in the selected source passages.
-
-**Editorial caveat:** Values are nominal yuan per shi, not currency-converted or inflation-adjusted. Different rice descriptions and later currency labels prevent treating this as a consistent real-price index. 1937 winter figure is a midpoint of the 4.6–4.7 range; 1941's 'above 100' is plotted at 100 as a lower bound. 1945's 70,000 to 700,000 jump is reported over roughly half a month, not separate years. Source: *Zhenfeng Ba Nian Xue Lei Lu*, *Jindaishi Ziliao* 54 (1984), pp. 238, 242, 247–248, 250, 256–257, 260–261.
+![Wartime illustrated publication](assets/dku-warpublication.webp)
+*Page from a Japanese-issued wartime illustrated publication, DKU collection photograph.*
