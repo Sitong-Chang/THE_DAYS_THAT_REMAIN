@@ -1,30 +1,32 @@
-# THE DAYS THAT REMAIN — 留下来的日子
+# THE DAYS THAT REMAIN · V6
 
-A static bilingual archival exhibition, built around Zhu Runcang’s 《贞丰八年血泪录》 (published in 《近代史资料》 no. 54, pp. 234–263).
+A self-contained, static bilingual digital curation website centered on Zhu Runcang's 《贞丰八年血泪录》.
 
 ## Deploy
-Upload **the contents of this folder** to a GitHub repository (keep all .html, .json, .js, .css files and assets/ at repository root), and deploy with Vercel framework **Other**, output directory `.`. No build command.
 
-## Local preview
-Use `python -m http.server 8000` in this directory and visit http://localhost:8000. Do not open index.html via file:// because the JSON files are loaded with fetch.
+Upload all files and the `assets/` directory to the root of your GitHub repository. Deploy to Vercel as a static site (no build command). Alternatively run `python -m http.server 8000` inside the extracted folder and visit `http://localhost:8000`.
 
-## Included
-- Complete 234–263 printed-page transcription from the user's DOCX, retained in diary.json
-- Inline annotations tied to specific Chinese terms, with printed-page provenance
-- Reader with thread filters, search, page jump, and focus mode
-- Year-indexed timeline, cross-page threads, relationship diagram, and 36 DKU on-site photographs
-- Language toggle for editorial UI and margin notes. The historical Chinese text remains Chinese, with bilingual curatorial interpretation; this is NOT a full English translation of all 30 pages.
+## Pages
 
-## Editorial / source cautions
-- The DOCX itself states that original typesetting errors in Luzhi were normalized and some characters corrected.
-- The diary uses lunar dates. The year index is not an automatic Gregorian conversion.
-- Relationship lines are thematic/contextual and do not claim event-level corroboration.
-- DKU photo images are provided as a working index under their filenames. They are not individually catalogued yet. Confirm provenance, dates, and publication permission before public distribution.
-- Some source categories in the bibliography are referenced for context, but their full texts/images are not bundled.
-- Japanese wartime material should be labelled as a situated military/propaganda perspective, not a neutral record.
+- `index.html` — editorial opening
+- `reader.html` — complete Chinese transcription (printed pp. 234–263) with seven curated annotations
+- `water.html` — waterways and blockades
+- `life.html` — rice, pacification and daily life
+- `memory.html` — the record's afterlife
+- `sources.html` — selective source index
 
-## Important missing tasks
-1. Match DKU images to exact catalog IDs and captions, verify permissions.
-2. Provide high-resolution page scans alongside transcription where rights allow.
-3. Commission/review English translations for selected diary excerpts.
-4. Verify all contextual links and citations at the level of specific archival pages.
+## Historical editorial rules
+
+The diary is a transcription of the 1984 printed edition supplied by the user, not an image of the original manuscript. Dates are lunar as noted by the author. Selected annotations are contextual and comparative, not claims of corroboration of identical events. Newspaper sources are supplied transcriptions; **no newspaper facsimile has been invented**. The Wujiang volume is retrospective (1995). DKU photographs are user-supplied with permission to exhibit, but collection identifiers and some image dates require checking against the archive catalog before final public submission.
+
+## Selected source images
+
+- 1984 printed diary pages from user-supplied PDF
+- 1995 Wujiang Historical Materials selected pages from user-supplied PDF
+- DKU Kunshan guide cover and spread, historical regional map, one wartime Japanese image, one postwar landscape photograph
+
+Duplicate DKU photos, unrelated historical overview pages, Shanghai refugee photos, and JACAR reports without direct local connections are intentionally excluded.
+
+## Notes
+
+The Chinese primary-source text is complete. English is provided for navigation and curatorial interpretation, **not a full English translation of the 30-page diary**. All files use relative links. The webfont is optional; the site falls back to system fonts when offline.
